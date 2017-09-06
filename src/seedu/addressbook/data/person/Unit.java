@@ -7,11 +7,11 @@ public class Unit {
         this.unitStr = s;
     }
 
-    public void setStreetStr(String s) {
+    public void setUnitStr(String s) {
         this.unitStr = s;
     }
 
-    public String getStreetStr() {
+    public String getUnitStr() {
         return this.unitStr;
     }
 

@@ -7,11 +7,11 @@ public class PostalCode {
         this.postalCodeStr = s;
     }
 
-    public void setStreetStr(String s) {
+    public void setPostalCodeStr(String s) {
         this.postalCodeStr = s;
     }
 
-    public String getStreetStr() {
+    public String getPostalCodeStr() {
         return this.postalCodeStr;
     }
 

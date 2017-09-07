@@ -21,7 +21,6 @@ public class Address {
     private Unit unit;
     private PostalCode postalCode;
 
-
     /**
      * Validates given address.
      *
@@ -71,4 +70,94 @@ public class Address {
     public boolean isPrivate() {
         return isPrivate;
     }
+
+
+
+    public class Block {
+
+        private String blockStr;
+
+        public Block(String s) {
+            this.blockStr = s;
+        }
+
+        public void setBlockStr(String s) {
+            this.blockStr = s;
+        }
+
+        public String getBlockStr() {
+            return this.blockStr;
+        }
+
+        @Override
+        public String toString() {
+            return this.blockStr;
+        }
+
+    }
+
+    public class Street {
+        private String streetStr;
+
+        public Street(String s) {
+            this.streetStr = s;
+        }
+
+        public void setStreetStr(String s) {
+            this.streetStr = s;
+        }
+
+        public String getStreetStr() {
+            return this.streetStr;
+        }
+
+        @Override
+        public String toString() {
+            return this.streetStr;
+        }
+    }
+
+
+    public class Unit {
+        private String unitStr;
+
+        public Unit(String s) {
+            this.unitStr = s;
+        }
+
+        public void setUnitStr(String s) {
+            this.unitStr = s;
+        }
+
+        public String getUnitStr() {
+            return this.unitStr;
+        }
+
+        @Override
+        public String toString() {
+            return this.unitStr;
+        }
+    }
+
+    public class PostalCode {
+        private String postalCodeStr;
+
+        public PostalCode(String s) {
+            this.postalCodeStr = s;
+        }
+
+        public void setPostalCodeStr(String s) {
+            this.postalCodeStr = s;
+        }
+
+        public String getPostalCodeStr() {
+            return this.postalCodeStr;
+        }
+
+        @Override
+        public String toString() {
+            return this.postalCodeStr;
+        }
+    }
 }
+

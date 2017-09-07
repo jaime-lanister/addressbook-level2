@@ -1,5 +1,6 @@
 package seedu.addressbook.data.person;
 
+//import javafx.geometry.Pos;
 import seedu.addressbook.data.exception.IllegalValueException;
 
 /**
@@ -37,10 +38,10 @@ public class Address {
 
         String[] tokens = address.split(", ");
 
-        this.block.setBlockStr(token[0]);
-        this.street.setStreetStr(token[1]);
-        this.unit.setUnitStr(token[2]);
-        this.postalCode.setPostalCodeStr(token[3]);
+        Block block = new Block(tokens[0]);
+        Street street = new Street(tokens[1]);
+        Unit unit = new Unit(tokens[2]);
+        PostalCode postalCode = new PostalCode(tokens[3]);
     }
 
     /**
